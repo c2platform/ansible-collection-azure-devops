@@ -1,0 +1,50 @@
+---
+az_devops_agent_version: 2.188.3
+az_devops_agent_user: "az_devops_agent"
+az_devops_agent_name: "{{ ansible_hostname }}"
+az_devops_server_url: "https://dev.azure.com/{{ az_devops_accountname }}/"
+az_devops_agent_folder: "{{ az_devops_default_agent_folder }}"
+az_devops_work_folder: "{{ az_devops_default_work_folder }}"
+az_devops_agent_group: "{{ az_devops_default_agent_group }}"
+az_devops_agent_pool_name: "Default"
+az_devops_agent_role: "build"
+az_devops_agent_replace_existing: false
+az_devops_reconfigure_agent: false
+az_devops_project_name: null
+az_devops_agent_package_url: "{{ az_devops_default_agent_package_url }}"
+az_devops_environment_name: null
+az_devops_deployment_group_name: null
+az_devops_deployment_group_tags: null
+# az_devops_proxy_url: null
+az_devops_proxy_username: null
+az_devops_proxy_password: null
+az_devops_agent_create_local_user: true
+
+build_agent_dependencies:
+  Debian 9:
+    - libcurl3
+    - libgssapi-krb5-2
+    - libicu57
+    - libssl1.1
+  Debian 10:
+    - libcurl4
+    - libgssapi-krb5-2
+    - libicu63
+    - libssl1.1
+  RedHat 7:
+    - krb5-libs
+    - libicu
+    - lttng-ust
+    - openssl-libs
+    - zlib
+  Ubuntu 18:
+    - libcurl4
+    - libgssapi-krb5-2
+    - libicu60
+    - libssl1.1
+  Ubuntu 20:
+    - libcurl4
+    - libgssapi-krb5-2
+    - libicu66
+    - libssl1.1
+    - acl

@@ -1,0 +1,31 @@
+---
+namespace: c2platform
+name: azure_devops
+version: "0.1.0"
+readme: README.md
+authors:
+  - Onno van der Straaten (onno@onknows.com)
+license_file: LICENSE
+
+description: C2 Platform Ansible Collection for Azure DevOps
+
+tags:
+  - c2platform
+  - azure
+  - devops
+  - collection
+  - linux
+  - agent
+  - build
+  - deployment
+  - ci
+  - cd
+
+dependencies: {}
+
+repository: https://github.com/c2platform/ansible-collection-azure_devops
+documentation: https://github.com/c2platform/ansible-collection-azure_devops
+homepage: https://github.com/c2platform/
+issues: https://github.com/c2platform/ansible-collection-azure_devops/issues
+
+build_ignore: []
